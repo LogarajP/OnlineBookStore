@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+    <style>
+    /******************************
+Setting the box size rule
+*******************************/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+
+
+/***************************
+Centering the web page
+***************************/
+
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/************************
+Styling the header 
+************************/
+
+#header {
+  background: white;
+}
+
+/****************************
+Styling the h1 in the header
+*****************************/
+
+#header h1 {
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/************************
+Styling the navigation
+*************************/
+
+
+
+/****************************
+Styling the main-content 
+section.
+*****************************/
+
+#main-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: url(../img/family.jpg) no-repeat center white;
+  background-size: cover;
+}
+
+#main-content p {
+  text-indent: 1.5em;
+  line-height: 2em;
+}
+
+/***************************
+Styling the main-content
+h3 heading
+****************************/
+
+#main-content h3{
+  margin: 0;
+  text-align: center;
+}
+
+/**************************
+Setting the image to 100%
+***************************/
+
+.center, img {
+  max-width: 100%;
+}
+
+/***************************
+Styling the gallery section
+****************************/
+
+.gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery li {
+  float: left;
+  width: 35%;
+  margin: 2%;
+  background: lightgrey;
+  color: white;
+}
+
+.gallery li a {
+  text-decoration: none;
+}
+
+.gallery li a:hover {
+  color: green;
+}
+
+.gallery li a p {
+  text-align: center;
+  font-size: 0.75em;
+}
+
+/************************
+Styling the footer
+*************************/
+
+footer {
+  background: white;
+  padding: 15px;
+}
+
+footer p:first-child {
+  font: 2.5em bold;
+  margin: 0;
+  text-align: center;
+}
+
+/***********************************
+STYLING THE ABOUT US PAGE
+************************************/
+
+.center {
+  width: 300px;
+  height: 300px;
+  display: block;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+/************************
+Centering the a href
+attributes.
+*************************/
+
+.center_align {
+  text-align: center;
+}
+
+/************************************
+Styling the href attributes on the
+about us page.
+*************************************/
+
+a[href^="#"] {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 15px; 
+}
+
+/**************************
+Setting the target for the
+href attributes. 
+****************************/
+
+:target{
+  background: #339966;
+  border: 2px solid black;
+  color: white;
+  padding: 15px;
+}
+
+
+/******************************
+CSS Media Queries
+*******************************/
+
+@media screen and (min-width: 250px) and (max-width: 379px) {
+  /***********************
+  Adding a border to the
+  bottom of the header.
+  ************************/
+  
+  #header {
+    border-bottom: 2px solid black;
+  }
+  
+  /****************************
+  Styling the h1 for the header
+  *****************************/
+  
+  #header h1 {
+    font-size: 0.55em;
+	float: left;
+	padding-left: 5px;
+  }
+  /*****************************
+  Using the clearfix hack for 
+  the navigation.
+  ******************************/
+  
+  .cf:before,
+  .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  .cf:after {
+    clear: both;
+  }
+  
+  /************************
+  Restyling the navigation
+  *************************/
+  
+  #navigation {
+    background: none;
+	border: none;
+	font-size: 0.60em;
+	float: right;
+	padding-top: 5px;
+  }
+  
+  /****************************
+  Removing the picture back-
+  ground from the main-content
+  section.
+  *****************************/
+  #main-content {
+    background: #4DFFB8;
+  }
+  
+  /*******************************
+  Adusting the font size for the
+  main-content section.
+  ********************************/
+  
+  #main-content p {
+    font-size: 0.75em;
+  }
+  
+  #main-content h3 {
+    font-size: 0.85em;
+  }
+  
+  /***************************
+  Styling the footer section
+  ****************************/
+  
+  footer p:first-child{
+    font: 1.3em bold;
+  }
+}  
+</style> <title>About us</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Book House</a>
+    
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedcontent01" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="collapsedcontent01">
+         <ul class="navbar-nav ms-auto">
+             <li class="nav-item">
+                 <a class="nav-link" href="aboutus.html">About us</a>
+             </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> categories</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="romancebooks.html">romance</a></li>
+                <li><a class="dropdown-item" href="adventurebooks.html">Adventure</a></li>
+                <li><a class="dropdown-item" href="sciencefiction.html">Science fiction</a></li>
+              </ul>
+            </li>
+             <li class="nav-item">
+                 <a class="nav-link" href=""> ZZZZZ</a>
+             </li>
+
+             <li class="nav-item">
+              <a class="nav-link" href="login.html"> logout</a>
+          </li>
+         </ul>
+       </div>
+
+ </nav>
+
+    <div id="wrapper">
+	    <div id="header" class="cf">
+		  <h1>Book House</h1>
+
+		</div>
+		<div id="main-content">
+		  <h3>What We Do For You</h3>
+		  <p>
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum essent dicta, discessimus. Nec vero ut voluptatem expetat, natura movet infantem, sed tantum ut se ipse diligat, ut integrum se salvumque velit. An quod ita callida est, ut optime possit architectari voluptates? Nec vero intermittunt aut admirationem earum rerum, quae sunt ab antiquis repertae, aut investigationem novarum. At tu eadem ista dic in iudicio aut, si coronam times, dic in senatu. At coluit ipse amicitias. Ex quo, id quod omnes expetunt, beate vivendi ratio inveniri et comparari potest. Itaque non discedit ab eorum curatione, quibus praeposita vitam omnem debet gubernare, ut mirari satis istorum inconstantiam non possim. Duo Reges: constructio interrete. 
+		 
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum essent dicta, discessimus. Nec vero ut voluptatem expetat, natura movet infantem, sed tantum ut se ipse diligat, ut integrum se salvumque velit. An quod ita callida est, ut optime possit architectari voluptates? Nec vero intermittunt aut admirationem earum rerum, quae sunt ab antiquis repertae, aut investigationem novarum. At tu eadem ista dic in iudicio aut, si coronam times, dic in senatu. At coluit ipse amicitias. Ex quo, id quod omnes expetunt, beate vivendi ratio inveniri et comparari potest. Itaque non discedit ab eorum curatione, quibus praeposita vitam omnem debet gubernare, ut mirari satis istorum inconstantiam non possim. Duo Reges: constructio interrete. 
+		  </p>
+		  
+		  <h4>Our Books</h4>
+		  <p id="our_workers">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cenasti in vita numquam bene, cum omnia in ista Consumis squilla atque acupensere cum decimano. Conferam tecum, quam cuique verso rem subicias; His enim rebus detractis negat se reperire in asotorum vita quod reprehendat. Tamen aberramus a proposito, et, ne longius, prorsus, inquam, Piso, si ista mala sunt, placet. Ut placet, inquit, etsi enim illud erat aptius, aequum cuique concedere. Tu vero, inquam, ducas licet, si sequetur; Duo Reges: constructio interrete. Aristoteles, Xenocrates, tota illa familia non dabit, quippe qui valitudinem, vires, divitias, gloriam, multa alia bona esse dicant, laudabilia non dicant
+		  </p>
+		  <h4>Our workers</h4>
+		  <p id="our_craftsmanship">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cenasti in vita numquam bene, cum omnia in ista Consumis squilla atque acupensere cum decimano. Conferam tecum, quam cuique verso rem subicias; His enim rebus detractis negat se reperire in asotorum vita quod reprehendat. Tamen aberramus a proposito, et, ne longius, prorsus, inquam, Piso, si ista mala sunt, placet. Ut placet, inquit, etsi enim illud erat aptius, aequum cuique concedere. Tu vero, inquam, ducas licet, si sequetur; Duo Reges: constructio interrete. Aristoteles, Xenocrates, tota illa familia non dabit, quippe qui valitudinem, vires, divitias, gloriam, multa alia bona esse dicant, laudabilia non dicant
+		  </p>
+		  <h4>Our Quality</h4>
+		  <p id="our_quality">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cenasti in vita numquam bene, cum omnia in ista Consumis squilla atque acupensere cum decimano. Conferam tecum, quam cuique verso rem subicias; His enim rebus detractis negat se reperire in asotorum vita quod reprehendat. Tamen aberramus a proposito, et, ne longius, prorsus, inquam, Piso, si ista mala sunt, placet. Ut placet, inquit, etsi enim illud erat aptius, aequum cuique concedere. Tu vero, inquam, ducas licet, si sequetur; Duo Reges: constructio interrete. Aristoteles, Xenocrates, tota illa familia non dabit, quippe qui valitudinem, vires, divitias, gloriam, multa alia bona esse dicant, laudabilia non dicant
+		  </p>
+		</div>
+		<footer>
+		  <p>Book house &copy; 2014</p>
+		</footer>
+	  </div>
+
+    
+</body>
+</html>
